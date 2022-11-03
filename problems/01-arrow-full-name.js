@@ -24,15 +24,9 @@ Plan:
 */
 
 const arrowGetFullName = person => {
-  let name = ""
-
-  for (let key in person) {
-    name.concat(" ", person[key])
-
-
-  }
-
-  return name
+  let fName = person['firstName']
+  let lName = person['lastName']
+  return fName + ' ' + lName;
 }
 
 

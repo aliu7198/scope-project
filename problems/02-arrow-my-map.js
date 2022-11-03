@@ -17,8 +17,21 @@ let result2 = arrowMyMap(['run', 'Forrest'], yell);
 console.log(result2);   // [ 'RUN!', 'FORREST!' ]
 
 ***********************************************************************/
+// Input: arr, cb
+// Output: new arr => cb on each el in arr
 
-// Your code here
+/*
+Plan:
+- create new arr
+*/
+
+let arrowMyMap = (arr, cb) => {
+  let newArr = [];
+  for (let i = 0; i < array.length; i++) {
+    let el = array[i];
+    arr.push(cb(el));
+  }
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
