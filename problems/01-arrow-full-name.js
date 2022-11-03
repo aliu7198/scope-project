@@ -6,7 +6,7 @@ Assign the below function to a variable using the const keyword. Using the const
 keyword will allow any value assigned to that variable protection from being
 reassigned within that scope.
 
-Examples:
+// Examples:
 let p1 = {firstName: 'John', lastName: 'Doe'};
 arrowGetFullName(p1); // => 'John Doe'
 let p2 = {firstName: 'Charlie', lastName: 'Brown', age: 9};
@@ -23,8 +23,16 @@ Plan:
 - return string
 */
 
-let arrowGetFullName = person => {
-  for (let )
+const arrowGetFullName = person => {
+  let name = ""
+
+  for (let key in person) {
+    name.concat(" ", person[key])
+
+
+  }
+
+  return name
 }
 
 
