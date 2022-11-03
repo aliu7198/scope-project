@@ -16,8 +16,23 @@ let sandwich2 = sandwichMaker(); // => returns a function
 sandwich2("pb") // => "One sandwich with tomato and pb"
 
 ***********************************************************************/
+// Input: sandwichMaker()
+// Output: func(" ") => "" + and
 
-// Your code here
+/*
+Plan:
+1. make function
+
+*/
+function sandwichMaker(fillings) {
+  let sandwich = fillings;
+  console.log(sandwich);
+  function addItem() {
+    sandwich.push()
+  }
+
+  return sandwich
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
