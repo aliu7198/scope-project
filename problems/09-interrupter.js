@@ -15,8 +15,34 @@ console.log(rudePerson2("I love dogs")); // prints "I yo love yo dogs"
 
 
 ***********************************************************************/
+// Input: string
+// Output: function => when invoked, str returned w/ interruptions
 
-// Your code here
+/*
+Plan:
+- create word variable for interruptingWord
+-
+- return function that takes a string as arg
+  - create variable for new sentence
+  - new sentence = string.split take interrupting word as arg
+  - new sentence = array.join w/ space
+  - return new sentence
+*/
+
+function interrupter(interruptingWord) {
+  let word = interruptingWord
+  return function myFunc(str) {
+    console.log(str);
+    let newSentence = str.split(word);
+    console.log(newSentence);
+    newSentence = newSentence.join(' ');
+    return newSentence;
+  }
+}
+
+let rudePerson = interrupter("what"); // => returns a function
+console.log(rudePerson("how are you")); // prints "how what are what you"
+console.log(rudePerson("I like pie")); // prints "I what like what pie"
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
