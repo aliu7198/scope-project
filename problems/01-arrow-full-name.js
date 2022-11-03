@@ -13,8 +13,20 @@ let p2 = {firstName: 'Charlie', lastName: 'Brown', age: 9};
 arrowGetFullName(p2); // => 'Charlie Brown'
 
 ***********************************************************************/
+// Input: obj
+// Output: string => full name
 
-// Your code here
+/*
+Plan:
+- use const for function definition
+- iterate through obj
+- return string
+*/
+
+let arrowGetFullName = person => {
+  for (let )
+}
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
