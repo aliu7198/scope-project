@@ -13,6 +13,9 @@ Invoking the interrupter function again:
 let rudePerson2 = interrupter("yo"); // => returns a function
 console.log(rudePerson2("I love dogs")); // prints "I yo love yo dogs"
 
+let rudePerson = interrupter("what"); // => returns a function
+console.log(rudePerson("how are you")); // prints "how what are what you"
+console.log(rudePerson("I like pie")); // prints "I what like what pie"
 
 ***********************************************************************/
 // Input: string
@@ -31,18 +34,16 @@ Plan:
 
 function interrupter(interruptingWord) {
   let word = interruptingWord
+  // console.log(word) // what
   return function myFunc(str) {
-    console.log(str);
-    let newSentence = str.split(word);
-    console.log(newSentence);
-    newSentence = newSentence.join(' ');
+    // console.log(str); // how are you
+    let newSentence = str.split(' ');
+    console.log(newSentence); //SHOULD Be [how, what, are, what, you]
+    newSentence = newSentence.join(' ' + word + ' ' );
     return newSentence;
   }
 }
 
-let rudePerson = interrupter("what"); // => returns a function
-console.log(rudePerson("how are you")); // prints "how what are what you"
-console.log(rudePerson("I like pie")); // prints "I what like what pie"
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

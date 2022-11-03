@@ -28,7 +28,24 @@ Example 4:
 
 ***********************************************************************/
 
-// Your code here
+// Input: countDownTimer(n)
+// Output: IF n > 0, return a function that can be invoked n times THEN + "Happy New Year!"
+
+/*
+Plan:
+-
+*/
+
+function countDownTimer(n) {
+  let count = 0
+
+  return function() {
+   if (count < n) {
+    count++;
+   }
+   }
+  }
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
