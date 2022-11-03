@@ -7,13 +7,6 @@ of seconds.
 There are no specs for this problem - try it in the console yourself to
 test your answer!
 
-Examples:
-
-function partyFunc () {
-  console.log("Party time!")
-}
-
-funcTimer(5000, partyFunc); // in 5 seconds prints: "Party time!"
 
 
 ***********************************************************************/
@@ -25,15 +18,22 @@ funcTimer(5000, partyFunc); // in 5 seconds prints: "Party time!"
 /*
 Plan:
 - define funcTimer(time, func)
-  - use .setTimeout to set timer for func to execute
-    - setTimeout(functionRef, delay) => setTimeout(func, time)
-  -return?
+- use .setTimeout to set timer for func to execute
+- setTimeout(functionRef, delay) => setTimeout(func, time)
+-return?
 */
 
 function funcTimer(time, func) {
-
+  global.setTimeout(func, time)
 }
 
+Examples:
+
+function partyFunc () {
+  console.log("Party time!")
+}
+
+funcTimer(5000, partyFunc); // in 5 seconds prints: "Party time!"
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {

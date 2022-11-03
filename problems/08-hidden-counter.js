@@ -14,6 +14,23 @@ hidden2(); // returns 1
 
 
 ***********************************************************************/
+// Input: hiddenCounter()
+// Output:  function
+
+/*
+Plan:
+  1. Define hiddenCounter function
+  2.
+-
+*/
+function hiddenCounter() {
+  let count = 0
+
+  return function() {
+    count++;
+    return count;
+  }
+}
 
 // Your code here
 
