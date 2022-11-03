@@ -17,8 +17,22 @@ funcTimer(5000, partyFunc); // in 5 seconds prints: "Party time!"
 
 
 ***********************************************************************/
+// Input: function, num => milliseconds
+// Output:
 
-// Your code here
+// Use global.setTimeout() function
+
+/*
+Plan:
+- define funcTimer(time, func)
+  - use .setTimeout to set timer for func to execute
+    - setTimeout(functionRef, delay) => setTimeout(func, time)
+  -return?
+*/
+
+function funcTimer(time, func) {
+
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
