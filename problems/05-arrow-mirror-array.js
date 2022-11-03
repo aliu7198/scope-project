@@ -9,8 +9,17 @@ Examples:
 arrowMirrorArray([1,2,3]); // => [ 1, 2, 3, 3, 2, 1 ]
 arrowMirrorArray(['a', 'b', 'c', 'd']); // => [ 'a', 'b', 'c', 'd', 'd', 'c', 'b', 'a' ]
 ***********************************************************************/
+// Input: arr
+// Output: new arr => arr + reverse arr
 
-// Your code here
+/*
+Plan:
+- arrow func
+  - create new arr
+  -
+*/
+
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
