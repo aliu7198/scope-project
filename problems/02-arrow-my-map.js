@@ -8,8 +8,6 @@ Do not use the built in Array#map - use Array#forEach for iteration.
 
 
 Examples:
-let result1 = arrowMyMap([100, 25, 81, 64], Math.sqrt);
-console.log(result1);   // [ 10, 5, 9, 8 ]
 
 const yell = el => el.toUpperCase() + '!'
 
@@ -25,14 +23,20 @@ Plan:
 - create new arr
 */
 
-let arrowMyMap = (arr, cb) => {
+let arrowMyMap = (arr, cb) => { //[100, 25, 81, 64], Math.sqrt
   let newArr = [];
-  for (let i = 0; i < array.length; i++) {
-    let el = array[i];
-    arr.push(cb(el));
-  }
+  arr.forEach((el, i) => {
+    newArr.push(cb(el,));
+  })
+  // for (let i = 0; i < array.length; i++) {
+  //   let el = array[i];
+  //   arr.push(cb(el));
+  // }
+  return newArr
 }
 
+let result1 = arrowMyMap([100, 25, 81, 64], Math.sqrt);
+console.log(result1);   // [ 10, 5, 9, 8 ]
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
